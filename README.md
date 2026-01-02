@@ -121,6 +121,7 @@ Or simply run the app once (tables auto-create).
 python app.py
 Access the app at:
 http://127.0.0.1:5000
+```
 
 🔐 Default Admin Credentials
 Field	Value
@@ -145,9 +146,8 @@ PNG
 Upload path: static/uploads/
 
 📊 Application Status Flow
-nginx
-Copy code
 Submitted → Under Review → Approved / Rejected
+
 🔮 Future Enhancements
 Email & SMS notifications
 
