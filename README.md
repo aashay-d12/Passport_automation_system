@@ -101,16 +101,19 @@ Relationships are managed using **SQLAlchemy ORM** with foreign key constraints.
 1️⃣ Clone Repository
 git clone https://github.com/your-username/passport-automation-system.git
 cd passport-automation-system
+
 2️⃣ Create Virtual Environment
 bash
 Copy code
 python -m venv venv
 source venv/bin/activate        # Linux/Mac
 venv\Scripts\activate           # Windows
+
 3️⃣ Install Dependencies
 bash
 Copy code
 pip install flask flask-sqlalchemy werkzeug
+
 4️⃣ Initialize Database
 bash
 Copy code
@@ -125,44 +128,44 @@ http://127.0.0.1:5000
 
 ## 🔐 Default Admin Credentials
 
-Field	    Value
-Email	    admin@gmail.com
-Password	admin123
+| Field	| Value |
+|-----|--------|
+| Email	| admin@gmail.com |
+| Password | admin123 |
 
 ⚠️ Change these credentials in production
 
 ## 📂 File Upload Configuration
 
-Max file size: 10 MB
+- Max file size: 10 MB
 
-Allowed formats:
-PDF
-JPG
-JPEG
-PNG
-Upload path: static/uploads/
+- Allowed formats:
+  - PDF
+  - JPG
+  - JPEG
+  - PNG
+  - Upload path: static/uploads/
 
 ## 📊 Application Status Flow
 
-Submitted → Under Review → Approved / Rejected
+- Submitted → Under Review → Approved / Rejected
 
 ## 🔮 Future Enhancements
 
-Email & SMS notifications
-Online payment gateway integration
-Role-based access control (RBAC)
-Biometric verification
-QR-based application tracking
-Admin analytics dashboard
+- Email & SMS notifications
+- Online payment gateway integration
+- Role-based access control (RBAC)
+- Biometric verification
+- QR-based application tracking
+- Admin analytics dashboard
 
 ## 📜 License
 
-This project is intended for academic and learning purposes.
+- This project is intended for academic and learning purposes.
 
 ## 👨‍💻 Author
 
-Aashay D
-Computer Science Student
-GitHub: https://github.com/your-username
+- Aashay D
+- GitHub: https://github.com/aashay-d12
 
 ## ⭐ If you like this project, please consider giving it a star!
