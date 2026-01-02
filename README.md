@@ -61,20 +61,17 @@ The system enables users to register, submit passport applications, upload docum
 
 Passport-Automation-System/
 │
-├── app.py # Main Flask application
-├── config.py # Application configuration
-├── database.sql # SQL schema
-├── passport.db # SQLite database (generated)
+├── app.py
+├── config.py 
+├── database.sql 
+├── passport.db 
 │
-├── templates/ # HTML templates
+├── templates/ 
 ├── static/
-│ └── uploads/ # Uploaded documents
+│ └── uploads/ 
 │
 ├── README.md
 └── requirements.txt
-
-yaml
-Copy code
 
 ---
 
@@ -173,19 +170,6 @@ This project is intended for academic and learning purposes.
 
 👨‍💻 Author
 Aashay D
-Computer Science Student
-GitHub: https://github.com/your-username
+GitHub: https://github.com/aashay-d12
 
 ⭐ If you like this project, please consider giving it a star!
-
-markdown
-Copy code
-
----
-
-### ✅ What I can do next (optional)
-- Add **Render deployment steps**
-- Create **requirements.txt**
-- Write **SRS / Mini Project Report**
-- Add **API documentation**
-- Improve **security best practices**
