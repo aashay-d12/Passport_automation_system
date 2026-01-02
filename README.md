@@ -58,7 +58,7 @@ The system enables users to register, submit passport applications, upload docum
 ---
 
 ## 📁 Project Structure
-
+```
 Passport-Automation-System/
 │
 ├── app.py
@@ -72,6 +72,7 @@ Passport-Automation-System/
 │
 ├── README.md
 └── requirements.txt
+```
 
 ---
 
@@ -161,7 +162,7 @@ http://127.0.0.1:5000
 
 ## 📜 License
 
-- This project is intended for academic and learning purposes.
+This project is intended for academic and learning purposes.
 
 ## 👨‍💻 Author
 
