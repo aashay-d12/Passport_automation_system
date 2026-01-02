@@ -97,8 +97,8 @@ Relationships are managed using **SQLAlchemy ORM** with foreign key constraints.
 
 ---
 
-### 1️⃣ Clone Repository
 ```bash
+1️⃣ Clone Repository
 git clone https://github.com/your-username/passport-automation-system.git
 cd passport-automation-system
 2️⃣ Create Virtual Environment
@@ -118,14 +118,10 @@ flask init-db
 Or simply run the app once (tables auto-create).
 
 5️⃣ Run the Application
-bash
-Copy code
 python app.py
 Access the app at:
-
-cpp
-Copy code
 http://127.0.0.1:5000
+
 🔐 Default Admin Credentials
 Field	Value
 Email	admin@gmail.com
