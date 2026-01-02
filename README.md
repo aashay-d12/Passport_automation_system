@@ -123,49 +123,46 @@ Access the app at:
 http://127.0.0.1:5000
 ```
 
-🔐 Default Admin Credentials
-Field	Value
-Email	admin@gmail.com
+## 🔐 Default Admin Credentials
+
+Field	    Value
+Email	    admin@gmail.com
 Password	admin123
 
 ⚠️ Change these credentials in production
 
-📂 File Upload Configuration
+## 📂 File Upload Configuration
+
 Max file size: 10 MB
 
 Allowed formats:
-
 PDF
-
 JPG
-
 JPEG
-
 PNG
-
 Upload path: static/uploads/
 
-📊 Application Status Flow
+## 📊 Application Status Flow
+
 Submitted → Under Review → Approved / Rejected
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
+
 Email & SMS notifications
-
 Online payment gateway integration
-
 Role-based access control (RBAC)
-
 Biometric verification
-
 QR-based application tracking
-
 Admin analytics dashboard
 
-📜 License
+## 📜 License
+
 This project is intended for academic and learning purposes.
 
-👨‍💻 Author
-Aashay D
-GitHub: https://github.com/aashay-d12
+## 👨‍💻 Author
 
-⭐ If you like this project, please consider giving it a star!
+Aashay D
+Computer Science Student
+GitHub: https://github.com/your-username
+
+## ⭐ If you like this project, please consider giving it a star!
