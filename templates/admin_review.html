@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Admin Review{% endblock %}
+{% block content %}
+<section class="card">
+    <h2>Review Application #{{ application.id }}</h2>
+    <div class="grid-2">
+        <div>
+            <p><strong>Applicant:</strong> {{ application.full_name }}</p>
+            <p><strong>Nationality:</strong> {{ application.nationality }}</p>
+            <p><strong>Address:</strong> {{ application.address }}</p>
+            <p><strong>Passport Type:</strong> {{ application.passport_type }}</p>
+            <p><strong>Current Status:</strong> <span class="status status-{{ application.status|lower|replace(' ', '-') }}">{{ application.status }}</span></p>
+        </div>
+        <div>
+            <h3>Documents</h3>
+            {% if application.documents %}
+                <ul class="doc-list">
+                {% for doc in application.documents %}
+                    <li><a href="{{ url_for('uploaded_file', filename=doc.filename) }}" target="_blank">{{ doc.original_name }}</a></li>
+                {% endfor %}
+                </ul>
+            {% else %}
+                <p>No documents uploaded.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <form method="post" class="inline-form">
+        <label for="status">Update Status</label>
+        <select name="status" id="status">
+            <option value="Submitted">Submitted</option>
+            <option value="Under Review">Under Review</option>
+            <option value="Approved">Approved</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+        <button type="submit" class="btn">Update</button>
+    </form>
+</section>
+{% endblock %}

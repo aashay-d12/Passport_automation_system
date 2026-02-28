@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Home · Passport Automation{% endblock %}
+{% block content %}
+<section class="hero card">
+    <h1>Apply for your passport with a clean, guided workflow</h1>
+    <p>Register, submit your application, upload documents, choose your appointment, and track status in one place.</p>
+    <div class="actions">
+        {% if session.get('user_id') %}
+            <a class="btn" href="{{ url_for('dashboard') }}">Go to Dashboard</a>
+        {% else %}
+            <a class="btn" href="{{ url_for('register') }}">Get Started</a>
+            <a class="btn btn-secondary" href="{{ url_for('login') }}">Login</a>
+        {% endif %}
+    </div>
+</section>
+
+<section class="grid-3">
+    <article class="card">
+        <h3>1) Submit Application</h3>
+        <p>Fill your personal details with validation support.</p>
+    </article>
+    <article class="card">
+        <h3>2) Schedule Appointment</h3>
+        <p>Pick date, time and nearest center with simple controls.</p>
+    </article>
+    <article class="card">
+        <h3>3) Track Status</h3>
+        <p>View updates in real-time from submitted to approved/rejected.</p>
+    </article>
+</section>
+{% endblock %}

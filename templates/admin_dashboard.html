@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Admin Dashboard{% endblock %}
+{% block content %}
+<section class="card">
+    <h2>Admin Dashboard</h2>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User ID</th>
+                    <th>Applicant</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for app in applications %}
+                <tr>
+                    <td>#{{ app.id }}</td>
+                    <td>{{ app.user_id }}</td>
+                    <td>{{ app.full_name }}</td>
+                    <td>{{ app.passport_type }}</td>
+                    <td><span class="status status-{{ app.status|lower|replace(' ', '-') }}">{{ app.status }}</span></td>
+                    <td><a class="btn btn-small" href="{{ url_for('admin_review', application_id=app.id) }}">Review</a></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Application Form{% endblock %}
+{% block content %}
+<section class="card form-card wide">
+    <h2>Passport Application Form</h2>
+    <form method="post" enctype="multipart/form-data" class="form-grid two-col">
+        <label>Full Name
+            <input type="text" name="full_name" required>
+        </label>
+        <label>Date of Birth
+            <input type="date" name="dob" required>
+        </label>
+        <label class="full">Address
+            <textarea name="address" rows="3" required></textarea>
+        </label>
+        <label>Nationality
+            <input type="text" name="nationality" required>
+        </label>
+        <label>Passport Type
+            <select name="passport_type" required>
+                <option value="">Select</option>
+                <option value="Regular">Regular</option>
+                <option value="Tatkal">Tatkal</option>
+                <option value="Official">Official</option>
+            </select>
+        </label>
+        <label class="full">Upload Documents (PDF/JPG/PNG)
+            <input type="file" name="documents" multiple>
+        </label>
+        <button type="submit" class="btn">Submit Application</button>
+    </form>
+</section>
+{% endblock %}

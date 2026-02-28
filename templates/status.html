@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Application Status{% endblock %}
+{% block content %}
+<section class="card">
+    <h2>Your Application Status</h2>
+    {% if applications %}
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Passport Type</th>
+                    <th>Status</th>
+                    <th>Submitted</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for app in applications %}
+                <tr>
+                    <td>#{{ app.id }}</td>
+                    <td>{{ app.full_name }}</td>
+                    <td>{{ app.passport_type }}</td>
+                    <td><span class="status status-{{ app.status|lower|replace(' ', '-') }}">{{ app.status }}</span></td>
+                    <td>{{ app.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+        <p>No applications found yet.</p>
+    {% endif %}
+</section>
+{% endblock %}
