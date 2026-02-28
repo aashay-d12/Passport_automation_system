@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Schedule Appointment{% endblock %}
+{% block content %}
+<section class="card form-card">
+    <h2>Schedule Appointment</h2>
+    <p>Application #{{ application.id }} · {{ application.full_name }}</p>
+    <form method="post" class="form-grid">
+        <label>Appointment Date
+            <input type="date" name="appointment_date" required>
+        </label>
+        <label>Appointment Time
+            <input type="time" name="appointment_time" required>
+        </label>
+        <label>Center Location
+            <input type="text" name="location" placeholder="e.g., City Passport Seva Kendra" required>
+        </label>
+        <button type="submit" class="btn">Save Appointment</button>
+    </form>
+</section>
+{% endblock %}
